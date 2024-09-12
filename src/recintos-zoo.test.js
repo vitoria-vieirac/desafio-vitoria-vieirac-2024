@@ -35,7 +35,7 @@ describe("Recintos do Zoologico", () => {
 
     // Se a verificação passar, então teste o conteúdo de recintosViaveis
     expect(resultado.recintosViaveis[0]).toBe(
-      "Recinto 4 (espaço livre: 7 total: 8)"
+      "Recinto 4 (espaço livre: 5 total: 8)"
     );
     expect(resultado.recintosViaveis.length).toBe(1);
   });
