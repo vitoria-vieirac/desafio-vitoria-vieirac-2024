@@ -20,20 +20,10 @@ describe("Recintos do Zoologico", () => {
   });
 
   test("Deve encontrar recinto para 1 crocodilo", () => {
-    console.log("Iniciando o teste para encontrar recinto para 1 crocodilo");
-
     const resultado = new RecintosZoo().analisaRecintos("CROCODILO", 1);
-
-    // Melhor console.log para ver o objeto resultado completo
-    console.log("Resultado retornado:", JSON.stringify(resultado, null, 2));
-
     expect(resultado.erro).toBeFalsy();
-
-    // Verifica se recintosViaveis está definido e é um array
     expect(resultado.recintosViaveis).toBeDefined();
     expect(Array.isArray(resultado.recintosViaveis)).toBe(true);
-
-    // Se a verificação passar, então teste o conteúdo de recintosViaveis
     expect(resultado.recintosViaveis[0]).toBe(
       "Recinto 4 (espaço livre: 5 total: 8)"
     );

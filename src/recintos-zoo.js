@@ -1,6 +1,5 @@
 class RecintosZoo {
   constructor() {
-    // Define os recintos com suas características
     this.recintos = [
       {
         numero: 1,
@@ -24,7 +23,6 @@ class RecintosZoo {
       },
     ];
 
-    // Define os animais aceitos e suas características
     this.animaisNovos = [
       {
         especie: "LEAO",
@@ -195,8 +193,6 @@ export { RecintosZoo as RecintosZoo };
 
 const zoo = new RecintosZoo();
 
+//Dois testes:
 console.log(zoo.analisaRecintos("MACACO", 2));
-// Exemplo de saída para lote que não pode ser dividido: { erro: "Não há recinto viável" }
-
 console.log(zoo.analisaRecintos("CROCODILO", 1));
-// Saída esperada: { recintosViaveis: ["Recinto 1 (espaço livre: 5 total: 10)", "Recinto 2 (espaço livre: 3 total: 5)", "Recinto 3 (espaço livre: 2 total: 7)"] }
